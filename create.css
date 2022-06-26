@@ -1,0 +1,68 @@
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 240px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #f0f0f0; 
+    overflow-x: hidden; /* Disable horizontal scroll */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .sidenav h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 16px;
+
+  }
+
+  .sidenav a.selected{
+    background-color: grey;
+    color: white;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: white;
+    background-color: grey;
+  }
+  
+
+  /* CSS Home Khusus */
+  .main {
+    margin-left: 280px; /* Same as the width of the sidebar */
+    padding: 10px 0px 0px; 
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* button submit configuration */
+  .button_submit_task{
+    margin-top: 40px;
+    padding: 10px 150px 10px 150px;
+    color: rgb(11, 133, 51);
+    background: transparent;
+    border: 2px solid rgb(11, 133, 51);
+    border-radius: 6px;
+  } 
+
+  .button_submit_task:hover{
+    background-color: rgb(11, 133, 51);      
+    color: white;
+  }
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
